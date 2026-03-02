@@ -17,6 +17,18 @@ app.get("/",(req,res) =>{
 app.get("/about",(req,res) =>{
     res.render("about")
 })
+app.get("/service",(req,res) =>{
+    res.render("service")
+})
+app.get("/team",(req,res) =>{
+    res.render("team")
+})
+app.get("/blog",(req,res) =>{
+    res.render("blog")
+})
+app.get("/contact",(req,res) =>{
+    res.render("contact")
+})
 app.listen(port, () => {
     console.log(`server is running on http://localhost:${port}`)
 })
